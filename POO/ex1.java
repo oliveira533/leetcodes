@@ -13,9 +13,17 @@ public class ex1{
 
         carro1.mostrar();
 
+        System.out.print("\n");
+
         Carro carro2 = new Carro();
         carro2.setModelo("T-CROSS");
-        carro2.setPlaca("");
+        carro2.setPlaca("CUF-OF0");
+        carro2.setChassi("FHSALKJFHDSLKJHHA");
+        carro2.setCor("Cinza");
+        carro2.setMontadora("Volkswagem");
+        carro2.setKm(45);
+
+        carro2.mostrar();
     }
 }
 
@@ -33,6 +41,7 @@ class Carro{
         System.out.println("Chassi: " + chassi);
         System.out.println("Cor: " + cor);
         System.out.println("Montadora: " + montadora);
+        System.out.println("Km: "+ km);
     }
 
     public String getModelo(){
@@ -41,6 +50,14 @@ class Carro{
 
     public void setModelo(String modelo){
         this.modelo = modelo;
+    }
+
+    public int getKm(){
+        return km;
+    }
+
+    public void setKm(int km){
+        this.km = km;
     }
 
     public String getPlaca(){
